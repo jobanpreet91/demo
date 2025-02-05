@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Bites & Brews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">Bites & Brews</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="booking.html">Book a Table</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu">
+        <h1>Our Menu</h1>
+
+        <!-- Search Bar -->
+        <input type="text" id="search" placeholder="Search menu..." onkeyup="filterMenu()">
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button onclick="filterCategory('all')">All</button>
+            <button onclick="filterCategory('breakfast')">Breakfast</button>
+            <button onclick="filterCategory('lunch')">Lunch</button>
+            <button onclick="filterCategory('drinks')">Drinks</button>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="menu-items">
+            <div class="menu-item breakfast">
+                <img src="images/scone.webp" alt="Scones">
+                <h3>Scones</h3>
+                <p>2 Scones served with Jam & Cream</p>
+                <span class="price">$7</span>
+            </div>
+
+            <div class="menu-item breakfast">
+                <img src="images/plain.avif" alt="Plain Toast">
+                <h3>Plain Toast G F+ $1</h3>
+                <p>White, Sourdough, Wholemeal or Gluten Free. Choice of butter, Jam, Nutella, Vegemite or Peanut Butter</p>
+                <span class="price">$5 </span>
+            </div>
+
+
+            <div class="menu-item breakfast">
+                <img src="images/smashed avo.webp" alt="Smashed Avocado">
+                <h3>Cafe Style Smashed Avocado</h3>
+                <p>Avocado, Fetta, Balsamic with Cherry Tomatoes</p>
+                <span class="price">$14</span>
+            </div>
+
+            <div class="menu-item lunch">
+                <img src="images/beef.webp" alt="Beef Burger">
+                <h3>Beef Burger</h3>
+                <p>Lettuce, Tomato, Beetroot, Grilled Onion</p>
+                <span class="price">$16</span>
+            </div>
+
+            <div class="menu-item drinks">
+                <img src="images/cap.webp" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>Rich espresso with frothy milk</p>
+                <span class="price">$4.60</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
